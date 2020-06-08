@@ -1,0 +1,188 @@
+.wrapper {
+  min-height: 100vh;
+  font-family: 'Luminari', serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  font-size: 15px;
+  color: yellow;
+  font-weight: 100;
+  background-color: #22A7F0;
+  display: -webkit-box;
+  display: flex;
+  /* -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; */
+}
+video {
+    position: absolute;
+    /* top: 0px;
+    height: 100vh; */
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+
+.Sun {
+  position: absolute;
+  /* top: 40px; */
+  left: 1000px;
+}
+.Star {
+  position: absolute;
+  /* top: 40px; */
+  left: 1000px;
+}
+.Magus {
+  position: absolute;
+  /* top: 40px; */
+  left: 1000px;
+}
+.Adjustment {
+  position: absolute;
+  /* top: 40px; */
+  left: 1000px;
+}
+.Tower {
+  position: absolute;
+  /* top: 40px; */
+  left: 1000px;
+}
+.Empress {
+  position: absolute;
+  /* top: 40px; */
+  left: 1000px;
+}
+section:nth-child(1) {
+  background: white;
+
+}
+
+section:nth-child(2) {
+  background: #F64747;
+}
+section:nth-child(3) {
+  background: #22A7F0;
+}
+section:nth-child(4) {
+  background: #F9690E;
+}
+section:nth-child(5) {
+  background: #9B59B6;
+}
+section:nth-child(6) {
+  background: rgb(99, 117, 231);
+}
+section:nth-child(7) {
+  background: rgb(69, 126, 35);
+}
+section:nth-child(8) {
+  background: rgb(179, 52, 52);
+}
+section:nth-child(9) {
+  background: rgba(247, 9, 109, 0.82);
+}
+
+.nav__wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 0px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+.nav {
+  margin: 0 0 150px 30px;
+}
+.nav__counter {
+  font-size: 14px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.nav__title {
+  font-size: 23px;
+  font-weight: 300;
+
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+
+  font-size: 11px;
+  width: 300px;
+  margin-left: 90px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav li {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}
+.nav li:after {
+  content: '';
+  display: block;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+.nav li a:focus {
+  background-color: transparent;
+}
+.nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+.nav li.active:after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+.nav li.active .nav__counter {
+  font-size: 48px;
+}
+.nav li.active .nav__title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+.nav li.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
